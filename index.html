@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Interstellar: Escape dos Asteroides</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="scripts/game.js"></script>
+    <script src="scripts/asteroid.js"></script>
+    <script src="scripts/ship.js"></script>
+    <script src="scripts/rocket.js"></script>
+    <script src="scripts/utils.js"></script>
+  </head>
+
+  <body>
+    <main class="intro-screen">
+      <div class="title__group">
+        <h1>INTERSTELLAR</h1>
+        <h2>Escape dos Asteroides</h2>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="game-canvas"></canvas>
+
+        <button id="play-btn" class="play-btn">Clique para Jogar</button>
+      </div>
+
+      <footer class="author">Desenvolvido por <strong>Vinícius Ribeiro</strong> FIAP - 2020</footer>
+
+      <audio autoplay loop preload="auto" src="media/interstellar-retro.mp3"></audio>
+    </main>
+  <script src="scripts/init-game.js"></script>
+  </body>
+</html>
+

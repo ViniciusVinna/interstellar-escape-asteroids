@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span,
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.intro-screen {
+  align-content: center;
+  background-color: #010729;
+  background-image: url("../images/bg-space.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  color: #FB4264;
+  font-size: 5vw;
+  line-height: 5vw;
+  text-shadow: 0 0 3vw #F40A35;
+  animation: neon 1s ease infinite;
+}
+
+h2 {
+  animation: flux 1s ease infinite;
+  animation-delay: 500ms;
+  color: #FB4264;
+  font-size: 2vw;
+  line-height: 2vw;
+  font-weight: bold;
+  text-shadow: 0 0 3vw #FB4264;
+}
+
+.canvas-wrapper {
+  height: 400px;
+  margin: auto;
+  position: relative;
+  width: 800px;
+}
+
+#game-canvas {
+  background: transparent;
+}
+
+.play-btn {
+  background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+  border: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  left: 50%;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-btn.is-playing {
+  display: none;
+}
+
+.title__group {
+  margin-top: auto;
+  padding-bottom: 30px;
+}
+
+.author {
+  color: #FB4264;
+  display: block;
+  font-size: 12px;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
